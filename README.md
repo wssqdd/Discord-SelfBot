@@ -57,7 +57,7 @@ python-dotenv
    ```bash
    git clone https://github.com/youruser/yourrepo.git
    cd yourrepo
-```
+``
 
 2. **Create a `.env` file**:
    Example:
@@ -92,5 +92,4 @@ python-dotenv
 
 Open-source project licensed under the MIT License.
 
-```
 

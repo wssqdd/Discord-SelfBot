@@ -10,7 +10,6 @@ Un selfbot polyvalent construit en Python, utilisant `discord.py 1.3.7`. Il prop
 
 * `.help` — Affiche la liste des catégories
 * `.setprefix [prefix]` — Change le préfixe du bot
-* `.set_lang [fr|en]` — Change la langue du bot
 
 ### 📊 Informations
 

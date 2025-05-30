@@ -1,70 +1,94 @@
-# Discord Selfbot
+# 🤖 Discord SelfBot - Python
 
-A customizable Discord selfbot written in Python using `discord.py`. It includes various commands such as utility tools, voice controls, status customization, fun commands, and server/user information display.
-
-**Disclaimer:** Selfbots are against Discord's Terms of Service and can lead to account termination. Use at your own risk and only in test environments.
+Un selfbot multifonctions développé en Python, compatible avec `discord.py 1.3.7`. Il permet d’exécuter diverses commandes utiles, amusantes et administratives directement depuis votre compte.
 
 ---
 
-## Features
+## ⚙️ Fonctions disponibles
 
-- Ping and latency check (API and VPS)
-- User and server information
-- Voice channel control (join, mute, unmute, camera)
-- Fun commands (e.g., gay percentage, casino)
-- Utility commands (e.g., get profile/server icons)
-- Status customization (activity, presence)
-- Language switcher (`fr` or `en`)
-- Customizable prefix via `.env` file
+### 📄 Commandes générales
+- `.help` — Affiche la liste des catégories
+- `.setprefix [préfixe]` — Change le préfixe du selfbot
+- `.set_lang [fr|en]` — Change la langue du selfbot
+
+### 📊 Info
+- `.ping` — Mesure la latence entre le bot et Discord
+- `.userinfo [@user]` — Affiche les infos d'un utilisateur
+- `.serverinfo` — Affiche les infos du serveur
+
+### 🔊 Voice
+- `.joinvc [channel_id]` — Rejoint un salon vocal
+- `.mute` / `.unmute` — (Dé)mute le micro
+- `.cam` — Active la caméra
+- `.voice` — Affiche les commandes vocales
+
+### 🎮 Fun
+- `.gay [@user]` — Montre à combien de % quelqu'un est gay 🏳️‍🌈
+- `.casino` — Mini machine à sous
+- `.fun` — Affiche les commandes fun
+
+### 🛠 Utility
+- `.pp [@user]` — Montre l’avatar de l’utilisateur
+- `.servericon` — Montre l’icône du serveur
+- `.utility` — Affiche les commandes utility
+
+### 🎯 Status
+- `.set_status [online|idle|dnd|invisible]` — Modifie le statut
+- `.set_activity [playing|watching|listening|streaming] [texte] [url?]` — Modifie l’activité
 
 ---
 
-## Requirements
+## 🧪 Dépendances
 
-- Python 3.8 or higher
-- `discord.py==1.3.7` (Not new version)
-- `python-dotenv`
-Or 
+Fichier `requirements.txt` :
 
-Install dependencies using:
+```
 
-```bash
-pip install -r requirements.txt
+discord.py==1.3.7
+python-dotenv
+
 ````
 
-Or install manually:
+---
 
-```bash
-pip install discord.py python-dotenv
-```
+## 🚀 Installation
+
+1. **Cloner le projet** :
+   ```bash
+   git clone https://github.com/tonuser/tonrepo.git
+   cd tonrepo
+````
+
+2. **Créer un fichier `.env`** :
+   Exemple :
+
+   ```env
+   TOKEN=ton_token_discord
+   PREFIX=.
+   LANG=fr
+   ```
+
+3. **Installer les dépendances** :
+
+   ```bash
+   pip uninstall -y discord.py && pip install -r requirements.txt
+   ```
+
+4. **Lancer le selfbot** :
+
+   ```bash
+   python main.py
+   ```
 
 ---
 
-## .env Configuration
+## 🛡 Avertissement
 
-Create a `.env` file in your project root directory with the following content:
-
-```env
-TOKEN=your_discord_token_here
-PREFIX=.
-LANG=fr
-```
+> ❗ **L'utilisation des selfbots est contraire aux Conditions d'utilisation de Discord.** Ton compte peut être **banni**. Ce projet est à but éducatif uniquement.
 
 ---
 
-## Running the Bot
+## 📄 Licence
 
-Run the bot with:
+Projet open-source sous licence MIT.
 
-```bash
-python bot.py
-```
-
-The bot will log in using your account token and respond to your own messages as a selfbot.
-
-```
-
----
-
-Souhaites-tu aussi une version en français ?
-```

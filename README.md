@@ -1,80 +1,85 @@
 # 🤖 Discord SelfBot - Python
 
-A multi-purpose selfbot built with Python, using `discord.py 1.3.7`. It provides fun, admin, utility, and voice-related commands directly from your user account.
+Un selfbot polyvalent construit en Python, utilisant `discord.py 1.3.7`. Il propose des commandes amusantes, d’administration, utilitaires et liées à la voix directement depuis ton compte utilisateur.
 
 ---
 
-## ⚙️ Features
+## ⚙️ Fonctionnalités
 
-### 📄 General Commands
-- `.help` — Shows the list of categories
-- `.setprefix [prefix]` — Changes the bot's prefix
-- `.set_lang [fr|en]` — Changes the bot's language
+### 📄 Commandes générales
 
-### 📊 Info
-- `.ping` — Shows the bot's latency
-- `.userinfo [@user]` — Displays user information
-- `.serverinfo` — Displays server information
+* `.help` — Affiche la liste des catégories
+* `.setprefix [prefix]` — Change le préfixe du bot
+* `.set_lang [fr|en]` — Change la langue du bot
 
-### 🔊 Voice
-- `.joinvc [channel_id]` — Joins a voice channel
-- `.mute` / `.unmute` — Mute or unmute the microphone
-- `.cam` — Activates the camera
-- `.voice` — Shows available voice commands
+### 📊 Informations
+
+* `.ping` — Affiche la latence du bot
+* `.userinfo [@user]` — Affiche les informations d’un utilisateur
+* `.serverinfo` — Affiche les informations du serveur
+
+### 🔊 Voix
+
+* `.joinvc [channel_id]` — Rejoint un salon vocal
+* `.mute` / `.unmute` — Coupe ou réactive le micro
+* `.cam` — Active la caméra
+* `.voice` — Affiche les commandes vocales disponibles
 
 ### 🎮 Fun
-- `.gay [@user]` — Shows how gay someone is (in % 🏳️‍🌈)
-- `.casino` — Mini slot machine game
-- `.fun` — Displays fun commands
 
-### 🛠 Utility
-- `.pp [@user]` — Displays a user's avatar
-- `.servericon` — Shows the server's icon
-- `.utility` — Displays utility commands
+* `.gay [@user]` — Montre à quel point quelqu’un est gay (en % 🏳️‍🌈)
+* `.casino` — Mini jeu de machine à sous
+* `.fun` — Affiche les commandes fun
 
-### 🎯 Status
-- `.set_status [online|idle|dnd|invisible]` — Changes your online status
-- `.set_activity [playing|watching|listening|streaming] [text] [url?]` — Sets custom activity
+### 🛠 Utilitaires
+
+* `.pp [@user]` — Affiche l’avatar d’un utilisateur
+* `.servericon` — Affiche l’icône du serveur
+* `.utility` — Affiche les commandes utilitaires
+
+### 🎯 Statut
+
+* `.set_status [online|idle|dnd|invisible]` — Change ton statut en ligne
+* `.set_activity [playing|watching|listening|streaming] [texte] [url?]` — Définit une activité personnalisée
 
 ---
 
-## 🧪 Dependencies
+## 🧪 Dépendances
 
-`requirements.txt`:
+`requirements.txt` :
 
 ```
-
 discord.py==1.3.7
 python-dotenv
-
 ```
 
 ---
 
 ## 🚀 Installation
 
-1. **Clone the project**:
+1. **Cloner le projet** :
+
    ```bash
    git clone https://github.com/youruser/yourrepo.git
    cd yourrepo
-
-
-2. **Create a `.env` file**:
-   Example:
-
-   ```env
-   TOKEN=your_discord_token
-   PREFIX=.
-   LANG=en
    ```
 
-3. **Install dependencies**:
+2. **Créer un fichier `.env`** :
+   Exemple :
+
+   ```env
+   TOKEN=ton_token_discord
+   PREFIX=.
+   LANG=fr
+   ```
+
+3. **Installer les dépendances** :
 
    ```bash
    pip uninstall -y discord.py && pip install -r requirements.txt
    ```
 
-4. **Run the bot**:
+4. **Lancer le bot** :
 
    ```bash
    python main.py
@@ -82,14 +87,18 @@ python-dotenv
 
 ---
 
-## ⚠️ Disclaimer
+## ⚠️ Avertissement
 
-> ❗ **Using a selfbot violates Discord's Terms of Service.** Your account can be **banned**. This project is for **educational purposes only**.
+> ❗ **Utiliser un selfbot enfreint les Conditions d’Utilisation de Discord.** Ton compte peut être **banni**. Ce projet est **uniquement à des fins éducatives**.
 
 ---
 
-## 📄 License
+## 📄 Licence
 
-Open-source project licensed under the MIT License.
+Projet open-source sous licence MIT.
+
+---
+
+
 
 

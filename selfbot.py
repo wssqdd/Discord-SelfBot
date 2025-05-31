@@ -431,6 +431,7 @@ async def on_message(message):
 # ‎‎‎‎‎‎‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎**__VOICE SETTINGS__**
 > `{current_prefix}setprefix [new_prefix]` - Permet de changer le prefix du SelfBot
 > `{current_prefix}set_lang` - Permet de changer la langue du SelfBot (IN DEV)
+> `{current_prefix}set_logs` - Active les logs (join, leave, nitro)
 """
          await message.edit(content=help_settings)
          await asyncio.sleep(5)
